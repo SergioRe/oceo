@@ -7,29 +7,29 @@
     <title>::: OCEO</title>
     <?php require_once(APPPATH."views/script-css/script-css.php"); ?>
     </head> 
-<body>
-    <div class="mainWrap">
-        <a id="touch-menu" class="mobile-menu" href="#">
-            <span class="glyphicon glyphicon-align-justify"></span>&nbsp;&nbsp;Menu
-        </a>
-        <nav>
-            <ul class="menu">
-                <?php
-                foreach ($listaMenu as $valor):
-                ?>
-                <li class="movil">
-                    <a href="<?= site_url($valor['MenuUrl']) ?>">
-                        <?php echo $valor['MenuNom'];?>
-                    </a>
-                </li>
-                <?php
-                endforeach;
-                ?>
-            </ul>
-        </nav>
-    </div>
+<body class="fondoprincipal">
+    <?php require_once(APPPATH."views/menu/menu.php"); ?>
     <div class="container">
         <h1>Inicio</h1>
+    </div>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Titulo</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Esto es una prueba.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

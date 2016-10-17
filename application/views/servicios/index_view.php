@@ -8,26 +8,7 @@
     <?php require_once(APPPATH."views/script-css/script-css.php"); ?>
     </head> 
 <body>
-    <div class="mainWrap">
-        <a id="touch-menu" class="mobile-menu" href="#">
-            <span class="glyphicon glyphicon-align-justify"></span>&nbsp;&nbsp;Menu
-        </a>
-        <nav>
-            <ul class="menu">
-                <?php
-                foreach ($listaMenu as $valor):
-                ?>
-                <li class="movil">
-                    <a href="<?= site_url($valor['MenuUrl']) ?>">
-                        <?php echo $valor['MenuNom'];?>
-                    </a>
-                </li>
-                <?php
-                endforeach;
-                ?>
-            </ul>
-        </nav>
-    </div>
+    <?php require_once(APPPATH."views/menu/menu.php"); ?>
     <div class="container">
         <h1>SERVICIOS</h1>
     </div>

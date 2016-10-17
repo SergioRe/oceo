@@ -95,7 +95,7 @@ p,div, span{line-height:1.3em;}
 }
  @media (min-width:768px){.mainWrap{width:768px;}}
  @media (min-width:992px){.mainWrap{width:970px}}
- @media (min-width:1200px){.mainWrap{width:1035px}}
+ @media (min-width:1200px){.mainWrap{width:1170px}}
  
 .title{margin:100px 0 20px 0;
 text-align:center;
@@ -516,4 +516,8 @@ width:100%;}
 }
 .ec-clickcolor {
     background-color: #252525;
+}
+
+.fondoprincipal{
+    background: #a9b6d0;
 }
