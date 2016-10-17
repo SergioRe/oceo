@@ -12,4 +12,12 @@ class Menu_model extends CI_Model {
         parent::__construct();
             $this->load->database();
     }
+    
+    public function obtenerListaMenu(){
+        $this->db->select('*');
+        $this->db->from($this->table);
+        $query = $this->db->get();
+        $data = $query->result_array();
+        return $data;
+    }
 }

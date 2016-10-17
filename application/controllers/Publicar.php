@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Inicio extends CI_Controller {
+class Publicar extends CI_Controller {
 
     public function __construct(){
         parent::__construct();
@@ -12,6 +12,6 @@ class Inicio extends CI_Controller {
         $this->load->helper('url');
         $data = array();
         $data['listaMenu'] = $this->menu->obtenerListaMenu();
-        $this->load->view('inicio/index_view',$data);
+        $this->load->view('publicar/index_view',$data);
     }
 }
